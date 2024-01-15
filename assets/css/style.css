@@ -1,0 +1,1195 @@
+@font-face {
+    font-family: Inter;
+    src: url('../fonts/Inter/Inter-SemiBold.ttf');
+    font-weight: normal;
+}
+
+*, *:focus{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: Inter;
+    /* border: 1px solid red; */
+}
+
+.bodyNoMove{
+    overflow: hidden;
+}
+
+.btn, .btn:focus{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.bar{
+    width: 15%;
+    height: 5px;
+    background-color: #4D4D4D;
+    opacity: 50%;
+    border-radius: .5rem;
+    margin: 0 auto;
+    position: relative;
+    z-index: -1;
+}
+
+/* Formatação menu */
+.menu{
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo{
+    display: flex;
+    align-items: center;    
+}
+
+.titleLogo{
+    margin-left: .25rem;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+.navBar{
+    width: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    max-width: 1200px;
+}
+
+.navBar .nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navBar .nav .navItem{
+    list-style-type: none;
+}
+
+.navBar .nav .navItem .navLink{
+    text-decoration: none;
+    color: #4D4D4D;
+    letter-spacing: .05rem !important;
+    font-size: 1rem;
+}
+
+.navBar .nav .registerButton .navLink{
+    background-color: #4CAF4F;
+    color: #f6f6f6;
+    display: flex;
+    padding: .75rem 1.5rem;
+    border-radius: .25rem;
+    align-items: center;
+    justify-content: space-around;
+    transition: all .4s;
+    width: 75%;
+}
+
+.navBar .nav .registerButton .navLink .arrow{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.navBar .nav .navItem .navLink:hover{
+    opacity: 75%;
+}
+
+/* Formatação button menu */
+.buttonHamb{
+    position: absolute;
+    right: .25rem;
+    top: .25rem;;
+    z-index: 2 !important;
+}
+
+.buttonHamb .btnHamb{
+    padding: .5rem;
+    display: none;
+    background-color: transparent !important;
+    cursor: pointer;
+}
+
+.buttonHamb .btnHamb div{
+    margin-top: .25rem;
+    transition: all .4s;
+    width: 1.4rem;
+    background-color: #4CAF4F;
+    height: 5px;
+    border-radius: .5rem;
+}
+
+.buttonHamb .btnHamb div:nth-child(1){
+    margin-top: 0;
+}
+
+/* Formatação buttonOpen */
+
+.buttonHamb .btnHambOpen div{
+    width: 1.5rem;
+    background-color: #f6f6f6;
+}
+
+.btnHambOpen div:nth-child(1){
+    transform: translateY(9px) rotate(45deg);
+}
+
+.btnHambOpen div:nth-child(2){
+    width: 0;
+}
+
+.btnHambOpen div:nth-child(3){
+    transform:translateY(-9px) rotate(-45deg);
+}
+
+.viewMenu{
+    display: block !important;
+    position: fixed;
+    top: 0;
+    right: 0;
+    animation: scaleNavOpen .45s linear 0s forwards;
+}
+
+@keyframes scaleNavOpen {
+    0% {
+      transform: translateX(10rem);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+/* Formatação principal */
+.container{
+    width: 100%;
+}
+
+.container .slidesMain{
+    padding: .25rem;
+    height: 32.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F5F7FA;
+}
+
+.container .slidesMain .texts{
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: .05rem;
+    color: #4D4D4D;
+}
+
+.container .slidesMain .textGreen{
+    color: #4CAF4F;
+    margin-top: -.25rem;
+}
+
+.container .slidesMain .texts .paragraph{
+    color: #717171;
+    font-size: .7rem;
+    margin: 1.5rem 0;
+}
+
+.container .slidesMain .texts .btnRegister,
+.unlockBox .texts .btnMoreUnlock, 
+.calenderBox .texts .btnMore, 
+.demoBox .btnDemo{
+    background-color: #4CAF4F;
+    padding: .75rem 1.5rem;
+    border-radius: .25rem;
+    color: #F5F7FA;
+    font-size: .85rem;
+    letter-spacing: .1rem;
+    transition: all .4s;
+}
+
+.container .slidesMain .texts .btnRegister:hover,
+.unlockBox .texts .btnMoreUnlock:hover,
+.calenderBox .texts .btnMore:hover{
+    opacity: 75%;
+}
+
+.container .slidesMain .image{
+    width: 30%;
+    max-width: 435px;
+}
+
+.container .slidesMain .image .imgFluid,
+ .unlockBox .imageUnlock .imgFluid,
+  .helpBox .counts .row .box .icon .imgFluid,
+  .calenderBox .image .imgFluid,
+    .customerBox .image .imgFluid,
+     .marketingBox .images .image .imgFluid{
+    width: 100%;
+}
+
+/* Formatação box de clientes */
+.clientsBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    letter-spacing: .05rem;
+}
+
+.clientsBox .titleClients, .communityBox .texts .titleCommunity{
+    font-size: 2rem;
+    color: #4D4D4D;
+    margin: .5rem 0;
+}
+
+.clientsBox .subtitleClients, .communityBox .texts .subtitleCommunity{
+    font-size: .9rem;
+    color: #717171;
+}
+
+.clientsBox .logoClients{
+    display: flex;
+    width: 40rem;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.clientsBox .logoClients .logo{
+    width: 3rem;
+}
+
+/* Formatação comunidade */
+.communityBox, .communityBox .texts{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.communityBox .groupCommunity{
+    margin-top: 1.5rem;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around !important;
+}
+
+.communityBox .texts{
+    margin-top: 2rem;
+}
+
+.communityBox .texts .titleCommunity{
+    max-width: 32rem;
+    text-align: center;
+}
+
+.communityBox .groupCommunity .boxGroup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    width: 15rem;
+    border-radius: .5rem;
+    box-shadow: 4px 4px 5px 0px rgba(171,190,209,0.75);
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(171,190,209,0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(171,190,209,0.75);
+}
+
+.communityBox .groupCommunity .boxGroup .imgFluid{
+    width: 5rem;
+    max-width: 65px;
+}
+
+.communityBox .groupCommunity .boxGroup .titleGroup{
+    font-size: 1.4rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: #4D4D4D;
+    width: 10rem;
+    margin-top: 1rem;
+}
+
+.communityBox .groupCommunity .boxGroup .paragraphGroup{
+    color: #717171;
+    text-align: center;
+    font-size: .8rem;
+    margin-top: .5rem;
+}
+
+/* Formatação desbloqueio */
+.unlockBox, .calenderBox{
+    margin-top: 4rem;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.unlockBox .imageUnlock,
+.calenderBox .image{
+    width: 100%;
+    max-width: 30rem;
+}
+
+.unlockBox .texts, .calenderBox .texts{
+    width: 100%;
+    max-width: 30rem;
+}
+
+.unlockBox .texts .titleUnlock{
+    font-size: 2rem;
+    max-width: 30rem;
+    margin-bottom: 1.5rem;
+    color: #4D4D4D;
+}
+
+.unlockBox .texts .paragraphUnlock{
+    font-size: .9rem;
+    color: #717171;
+    letter-spacing: .05rem;
+}
+
+.unlockBox .texts .btnMoreUnlock,
+.calenderBox .texts .btnMore{
+    margin-top: 3rem;
+}
+
+/* Formatação ajuda ao cliente */
+.helpBox{
+    background-color: #F5F7FA;
+    padding:8rem 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.helpBox .texts .titleHelp, .helpBox .texts .textGreen{
+    letter-spacing: .05rem;
+}
+
+.helpBox .texts .titleHelp{
+    font-size:2.6rem;
+    color: #4D4D4D;
+}
+
+.helpBox .texts .textGreen{
+    color: #4CAF4F;
+    font-size: 1.8rem;
+}
+
+.helpBox .texts .paragraph{
+    font-size: .75rem;
+    color: #18191F;
+    font-weight: 500;
+    letter-spacing: .025rem;
+    margin-top: 1rem;
+}
+
+.helpBox .counts, .helpBox .counts .row,  .helpBox .counts .row .box{
+    display: flex;
+    justify-content: space-around;
+}
+
+.helpBox .counts{
+    width: 100%;
+    max-width: 30rem;
+    flex-direction: column;
+}
+
+.helpBox .counts .row:nth-child(2){
+    margin-top: 3rem;
+}
+
+.helpBox .counts .row .box .icon{
+    display: flex;
+    align-items: center;
+    width: 3rem;
+    margin-right: .5rem;
+}
+
+
+.helpBox .counts .row .box .texts .titleNumber{
+    font-size: 1rem;
+    color: #4D4D4D;
+}
+
+.helpBox .counts .row .box .texts .subtitleCount{
+    color: #717171;
+    text-transform: capitalize;
+    font-size: .75rem;
+    margin-top: .15rem;
+}
+
+.helpBox .counts .row .box .texts .titleNumber,
+ .helpBox .counts .row .box .texts .subtitleCount{
+    letter-spacing: .035rem;
+}
+
+/* Formatação calendario */
+.calenderBox{
+    padding: .5rem 1rem;
+}
+
+.calenderBox .image{
+    width: 30rem;
+}
+
+.calenderBox .texts{
+    max-width: 50rem;
+}
+
+.calenderBox .texts .title{
+    color: #4D4D4D;
+    max-width: 35rem;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+.calenderBox .texts .title, .calenderBox .texts .paragraph{
+    letter-spacing: .015rem;
+}
+
+.calenderBox .texts .paragraph{
+    color: #717171;
+    font-size: .9rem;
+}
+
+/* Formatação customer */
+.customerBox{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    background-color: #F5F7FA;
+}
+
+.customerBox .image{
+    width: 100%;
+    max-width: 20rem;
+}
+
+.customerBox .texts{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    max-width: 26rem;
+    letter-spacing: .025rem;
+}
+
+.customerBox .texts .paragraph{
+    color: #717171;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.customerBox .texts .textGreen{
+    margin-top: .5rem;
+    margin-bottom: .25rem;
+    color: #4CAF4F;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.customerBox .texts .subtitle{
+    color: #717171;
+    opacity: 50%;
+    font-size: .9rem;
+}
+
+.customerBox .texts .logos{
+    margin-top: 1.5rem;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.customerBox .texts .logos .imageLogo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 35rem;
+}
+
+.customerBox .texts .logos .link{
+    width: 80%;
+    margin-left:2rem;
+}
+
+.customerBox .texts .logos .link .linkItem{
+    text-decoration: none;
+    transition: all .4s;
+    color: #4CAF4F;
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+}
+
+.customerBox .texts .logos .link .linkItem:hover{
+    opacity: 75%;
+}
+
+.customerBox .texts .logos .link .linkItem .path{
+    width: 1.5rem;
+    margin-top: .15rem;
+}
+
+/* Formatação marketing */
+.marketingBox{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: .025rem;
+}
+
+.marketingBox .texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.marketingBox .texts .title{
+    font-size: 2rem;
+    color: #4D4D4D;
+    margin-bottom: .5rem;
+}
+
+.marketingBox .texts .paragraph{
+    max-width: 37rem;
+    color: #717171;
+    font-size: .9rem;
+    text-align: center;
+}
+
+.marketingBox .images{
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    max-width: 60rem;
+    justify-content: space-around;
+}
+
+.marketingBox .images .image{
+    display: flex;
+    flex-direction: column;
+    max-width: 15rem;
+    position: relative;
+    width: 100%;
+}
+
+.marketingBox .images .image .texts{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: #F5F7FA;
+    border-radius: .5rem;
+    padding: 1rem;
+    max-width: 12rem;
+    height: 5rem;
+    width: 100%;
+    box-shadow: 0px 2px 20px 0px rgba(171,190,209,0.75);
+    -webkit-box-shadow: 2px 0px 20px 0px rgba(171,190,209,0.75);
+    -moz-box-shadow: 2px 0px 20px 0px rgba(171,190,209,0.75);
+}
+
+.marketingBox .images .image .texts .subtitle{
+    font-size: .8rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: #4D4D4D;
+}
+
+.marketingBox .images .image .texts .linkItem{
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #4CAF4F;
+    display: flex;
+    text-transform: capitalize;
+    align-items: center;
+    bottom: .25rem;
+    position: absolute;
+    transition: all .4s;
+}
+
+.marketingBox .images .image .texts .linkItem:hover{
+    opacity: 75%;
+}
+
+.marketingBox .images .image .texts .linkItem .path{
+    width: 2rem;
+}
+
+/* Formatação demo */
+.demoBox{
+    margin-top: 6rem;
+    background-color: #F5F7FA;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.demoBox .title{
+    font-size: 2rem;
+    max-width: 15rem;
+    text-align: center;
+}
+
+.demoBox .btnDemo{
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    font-size: .9rem;
+    padding: .5rem 2rem;
+    transition: all .4s;
+}
+
+.demoBox .btnDemo:hover{
+    opacity: 75%;
+}
+
+.demoBox .btnDemo .path{
+    width: 2rem;
+}
+
+/* Formatação footer */
+.footer{
+    color: #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    margin-bottom: -20px;
+    background-color: #263238;
+}
+
+.footer .companyInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .companyInfo .logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.footer .companyInfo .logo .path{
+    margin-right: .5rem;
+}
+
+.footer .companyInfo .copyText{
+    margin-top: 5rem;
+    font-size: .75rem;
+    opacity: 75%;
+    letter-spacing: .05rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.footer .companyInfo .copySubtext{
+    font-size: .75rem;
+    opacity: 75%;
+    margin-top: .25rem;
+    text-transform: capitalize;
+}
+
+.footer .companyInfo .iconsSocial{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: .5rem;
+}
+
+.footer .companyInfo .iconsSocial .icon{
+    width: 2rem;
+    transition: all .4s;
+}
+
+.footer .companyInfo .iconsSocial .icon:hover{
+    opacity: 50%;
+}
+
+.footer .companyInfo .iconsSocial .icon .imgFluid,
+.footer .links .emailBox .inputEmail .arrowEmail .imgFluid{
+    width: 100%;
+}
+
+.footer .links{
+    display: flex;
+    max-width: 80rem;
+    width: 100%;
+    padding: 0 3rem;
+    margin-left:3rem;
+    justify-content: space-between;
+}
+
+.footer .links .company,  .footer .links .support{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.footer .links .company .title,
+.footer .links .support .title,
+.footer .links .emailBox .title{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer .links .company .linkItem,
+.footer .links .support .linkItem{
+    font-size: 1rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-top: 1rem;
+    color: #f6f6f6;
+    transition: all .4s;
+}
+
+.footer .links .company .linkItem:hover,  
+.footer .links .support .linkItem:hover{
+    opacity: 50%;
+}
+
+.footer .links .emailBox{
+    margin-top: 1rem;
+}
+
+.footer .links .emailBox .inputEmail{
+    display: flex;  
+    position: relative;
+    align-items: center;
+}
+
+.footer .links .emailBox .inputEmail #emailUser{
+    background-color: #f6f6f650;
+    color: #F5F7FA;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.footer .links .emailBox .inputEmail .arrowEmail{
+    width: 1.5rem;
+    position: absolute;
+    right: -1.75rem;
+    top:.25rem;
+}
+
+.footer .links .emailBox .inputEmail #emailUser::placeholder{
+    color: #F5F7FA;
+}
+
+@media(min-width: 1201px){
+    .unlockBox .texts{
+        max-width: 50rem;
+    }
+
+    .helpBox .counts{
+        max-width: 40rem;
+    }
+
+    .helpBox .texts .titleHelp{
+        font-size:3rem;
+    }
+    
+    .helpBox .texts .textGreen{
+        font-size: 2.25rem;
+    }
+
+    .helpBox .texts .paragraph{
+        font-size: .9rem;
+    }
+
+    .customerBox{
+        padding: 2rem 4rem;
+    }
+
+    .customerBox .texts{
+        max-width: 45rem;
+    }
+}
+
+@media(max-width:1200px){
+    .menu{
+        justify-content: space-between;
+    }
+
+    .navBar{
+        width: auto;
+    }
+
+    .navBar .nav{
+        width: 40rem;
+        justify-content: space-between;
+    }
+
+    .calenderBox .texts{
+        max-width: 30rem;
+    }
+
+    .customerBox .texts .logos{
+        width: 100%;
+    }
+    
+    .customerBox .texts .logos .link {
+        width: 70%;
+        margin-left: 1rem;
+    }
+}
+
+@media(max-width:992px){
+    .buttonHamb .btnHamb{
+        display: block;
+    }
+
+    .menu{
+        justify-content: space-between;
+        padding: .5rem;
+    }
+
+    .navBar{
+        display: none;
+    }
+
+    .navBar .nav{
+        width: 15rem;
+        background-color: #4CAF4F;
+        height: 100vh;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .navBar .nav .navItem .navLink{
+        color: #f6f6f6;
+        padding: .5rem 1.5rem;
+    }
+
+    .navBar .nav .registerButton .navLink{
+        background-color: #f6f6f6;
+        color: #4CAF4F;
+        text-align: center;
+        padding: 0;
+        width: 100%;
+        padding: .5rem;
+    }
+
+    .navBar .nav .registerButton .navLink path{
+        stroke: green;
+        stroke-width: 0.765676;
+        stroke-linecap: round;
+    }
+
+    .container .slidesMain .texts{
+        font-size: 1.6rem;
+    }
+
+    .container .slidesMain .texts .paragraph{
+        width: 85%;
+    }
+    
+    .clientsBox .titleClients, 
+    .communityBox .texts .titleCommunity,
+    .unlockBox .texts .titleUnlock,
+    .calenderBox .texts .title{
+        font-size: 1.6rem;
+    }
+
+    .communityBox .texts .titleCommunity{
+        width: 25rem;
+    }
+
+    .clientsBox .subtitleClients, 
+    .communityBox .texts .subtitleCommunity, 
+    .unlockBox .texts .paragraphUnlock,
+    .helpBox .texts .paragraph{
+        font-size: .75rem;
+    }
+
+    .communityBox .groupCommunity .boxGroup{
+        width: 12.5rem;
+    }
+
+    .unlockBox .texts, 
+    .calenderBox .texts{
+        width: 100%;
+        max-width: 25rem;
+    }
+    
+    .unlockBox .texts .paragraphUnlock{
+        text-align: justify;
+    }
+
+    .helpBox{
+        padding: 8rem 2rem;
+    }
+
+    .helpBox .counts{
+        max-width: 25rem;
+    }
+
+    .helpBox .texts .titleHelp{
+        font-size: 1.8rem;
+    }
+
+    .helpBox .texts .textGreen{
+        font-size: 1.4rem;
+    }
+
+    .calenderBox .texts .title{
+        font-size: 1.6rem;
+    }
+
+    .calenderBox .texts .paragraph{
+        text-align: justify;
+        font-size: .75rem;
+    }
+
+    .calenderBox .image{
+        width: 22.5rem;
+    }
+
+    .customerBox{
+        padding: 2rem .5rem;
+    }
+
+    .customerBox .texts{
+        max-width: 25rem;
+    }
+
+    .customerBox .texts .paragraph{
+        font-size: .75rem;
+    }
+
+    .customerBox .texts .textGreen{
+        font-size: .7rem;
+    }
+
+    .customerBox .texts .subtitle{
+        font-size: .65rem;
+    }
+
+    .customerBox .texts .logos{
+        flex-direction: column;
+    }
+
+    .customerBox .texts .logos .link{
+        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .marketingBox{
+        padding: 0 1rem;
+    }
+
+    .marketingBox .texts .title{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .marketingBox .texts .paragraph{
+        font-size: .8rem;
+    }
+
+    .marketingBox .images .image .texts .subtitle{
+        font-size: .75rem;
+    }
+
+    .marketingBox .images .image .texts .linkItem{
+        font-size: .75rem;
+    }
+
+    .demoBox .title{
+        font-size: 1.6rem;
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .companyInfo .copyText{
+        margin-top: 1rem;
+    }
+
+    .footer .links{
+        margin: 2rem 0 0 0;
+        padding: 1rem;
+        max-width: 40rem;
+    }
+}
+
+@media(max-width:592px){
+    .container .slidesMain{
+        flex-direction: column-reverse;
+    }
+
+    .container .slidesMain .texts{
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .container .slidesMain .texts .paragraph{
+        width: 100%;
+    }
+
+    .container .slidesMain .image{
+        width: 90%;
+        max-width: 250px;
+    }
+
+    .clientsBox .subtitleClients, .communityBox .texts .subtitleCommunity{
+        width: 80%;
+        text-align: center;
+    }
+
+    .clientsBox .logoClients{
+        width: 95%;
+        justify-content: space-between;
+    }
+
+    .clientsBox .logoClients .logo{
+        width: 2rem;
+    }
+
+    .communityBox .groupCommunity{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .communityBox .groupCommunity .boxGroup{
+        margin-top: 1.5rem;
+    }
+
+    .communityBox .groupCommunity .boxGroup:nth-child(1){
+        margin: 0;
+    }
+
+    .communityBox .texts .titleCommunity{
+        width: 15rem;
+    }
+
+    .unlockBox{
+        flex-direction: column;
+    }
+
+    .unlockBox .texts,
+    .calenderBox .texts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .unlockBox .texts .titleUnlock,
+    .calenderBox .texts .title{
+        text-align: center;
+    }
+
+    .unlockBox .texts .btnMoreUnlock{
+        margin-top: 2rem;
+    }
+
+    .helpBox{
+        flex-direction: column;
+        padding: 4rem .5rem;
+    }
+
+    .helpBox .texts, 
+    .helpBox .counts .row,
+    .customerBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .helpBox .texts .titleHelp{
+        font-size: 2rem;
+    }
+
+    .helpBox .texts .textGreen{
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    .helpBox .texts .paragraph{
+        font-size: .9rem;
+        width: 80%;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .helpBox .counts .row{
+        margin: 0 !important;
+    }
+
+    .helpBox .counts .row .box{
+        width: 10rem;
+        margin: 0 auto;
+        margin-top:2rem;
+    }
+
+    .helpBox .counts .row .texts{
+        flex-direction: column;
+        width: 100%;
+        align-items: start;
+    }
+
+    .calenderBox{
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+
+    .calenderBox .image{
+        width: 100%;
+        margin-bottom: .5rem;
+    }
+
+    .customerBox{
+        padding: 2rem 1rem;
+    }
+
+    .customerBox .image{
+        max-width: 15rem;
+    }
+
+    .marketingBox .images{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .marketingBox .images .image{
+        margin-top: 5rem;
+    }
+
+    .marketingBox .images .image:nth-child(1){
+        margin-top: 0;
+    }
+
+    .marketingBox .texts .paragraph{
+        font-size: .75rem;
+    }
+
+    .footer .links{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer .links .company .title, .footer .links .support .title{
+        margin-bottom: .5rem;
+    }
+
+    .footer .links .support, .footer .links .emailBox{
+        margin-top: 3rem;
+    }
+}
+
