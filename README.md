@@ -1,6 +1,6 @@
 # Nextcent Landing Page
   
-  #NextCent - Página da Agência Fictícia#
+  #NextCent - Página da Agência Fictícia
   
 Design: Muntasir Billah**
 
