@@ -2,7 +2,7 @@
   
   **NextCent - Página da Agência Fictícia**
   
-Design: Muntasir Billah**
+**Design: Muntasir Billah**
 
 Confira o design original [aqui](https://www.figma.com/file/b5oiPRpnY80LbtZQZhRyW2/Responsive-Landing-Page-Design-%7C-Website-Home-Page-Design-%7C-Agency-Website-UI-Design-(Community)?type=design&node-id=1-2&mode=design&t=tanWHbbl9VtRGzcq-0).
 
@@ -22,11 +22,6 @@ Descubra a elegância da nossa página de destino responsiva, meticulosamente pr
 - **Programação:** Vanderson Souza
 
 Agradecemos a todos os contribuidores e apoiadores que tornaram este projeto possível.
-
-## Licença
-
-Este projeto é licenciado.
-
 ---
 
 **Explore a aura inovadora da NextCent, nossa agência fictícia. Navegue pelas possibilidades criativas e experiencie a vanguarda imaginativa da NextCent! 🚀** 🚀
