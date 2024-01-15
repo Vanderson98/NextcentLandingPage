@@ -15,11 +15,6 @@ Descubra a elegância da nossa página de destino responsiva, meticulosamente pr
 2. Abra o arquivo `index.html` no seu navegador preferido.
 3. Explore os recursos e informações sobre Nextcent.
 
-## Contribuições
-
-- Se desejar contribuir, siga as diretrizes em `CONTRIBUTING.md`.
-- Relate problemas ou compartilhe sugestões na seção de [Issues](link-para-issues).
-
 ## Créditos
 
 - **Design:** Muntasir Billah
